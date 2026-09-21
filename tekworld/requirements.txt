@@ -2,3 +2,4 @@ scrapy
 requests
 pandas
 openpyxl
+nbconvert
