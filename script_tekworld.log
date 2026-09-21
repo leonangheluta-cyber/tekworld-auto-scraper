@@ -1,0 +1,337 @@
+2026-09-21 09:43:13,632 - INFO - Scrapy 2.19.0 started (bot: tekworld)
+2026-09-21 09:43:13,744 - INFO - Versions:
+{'lxml': '6.1.3',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.5.0',
+ 'parsel': '1.11.0',
+ 'w3lib': '2.4.1',
+ 'Twisted': '26.4.0',
+ 'Python': '3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '26.4.0 (OpenSSL 4.0.2 25 Aug 2026)',
+ 'cryptography': '50.0.1',
+ 'Platform': 'Windows-10-10.0.19045-SP0'}
+2026-09-21 09:43:13,744 - DEBUG - Using AsyncCrawlerProcess
+2026-09-21 09:43:13,745 - DEBUG - Using selector: SelectSelector
+2026-09-21 09:43:13,751 - INFO - Enabled addons:
+[]
+2026-09-21 09:43:13,766 - DEBUG - Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-09-21 09:43:13,766 - DEBUG - Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2026-09-21 09:43:13,796 - INFO - Telnet Password: 7b4b76906d213caa
+2026-09-21 09:43:14,269 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-09-21 09:43:14,270 - INFO - Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'tekworld',
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 4,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'NEWSPIDER_MODULE': 'tekworld.spiders',
+ 'REMOTE_CONTROL_ENABLED': False,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 522, 524, 408, 429, 403],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['tekworld.spiders']}
+2026-09-21 09:43:14,693 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-09-21 09:43:14,702 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'scrapy.spidermiddlewares.metacopy.MetaCopyDetectionMiddleware']
+2026-09-21 09:43:14,702 - INFO - Enabled item pipelines:
+[]
+2026-09-21 09:43:14,705 - INFO - Telnet console listening on 127.0.0.1:6023
+2026-09-21 09:43:14,705 - INFO - Spider opened
+2026-09-21 09:43:14,882 - Level 5 - override steps (5) and chunk_size (512) as content does not fit (1109 byte(s) given) parameters.
+2026-09-21 09:43:14,882 - Level 5 - Code page ascii does not fit given bytes sequence at ALL. 'ascii' codec can't decode byte 0xff in position 7: ordinal not in range(128)
+2026-09-21 09:43:14,883 - Level 5 - Code page utf_8 does not fit given bytes sequence at ALL. 'utf-8' codec can't decode byte 0xff in position 7: invalid start byte
+2026-09-21 09:43:14,885 - Level 5 - Code page big5 does not fit given bytes sequence at ALL. 'big5' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,888 - Level 5 - Code page big5hkscs does not fit given bytes sequence at ALL. 'big5hkscs' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,891 - Level 5 - Code page cp932 does not fit given bytes sequence at ALL. 'cp932' codec can't decode byte 0x88 in position 27: illegal multibyte sequence
+2026-09-21 09:43:14,892 - Level 5 - Code page cp949 does not fit given bytes sequence at ALL. 'cp949' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,894 - Level 5 - Code page cp950 does not fit given bytes sequence at ALL. 'cp950' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,896 - Level 5 - Code page euc_jis_2004 does not fit given bytes sequence at ALL. 'euc_jis_2004' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,898 - Level 5 - Code page euc_jisx0213 does not fit given bytes sequence at ALL. 'euc_jisx0213' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,899 - Level 5 - Code page euc_jp does not fit given bytes sequence at ALL. 'euc_jp' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,901 - Level 5 - Code page euc_kr does not fit given bytes sequence at ALL. 'euc_kr' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,902 - Level 5 - Code page gb18030 does not fit given bytes sequence at ALL. 'gb18030' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,904 - Level 5 - Code page gb2312 does not fit given bytes sequence at ALL. 'gb2312' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,906 - Level 5 - Code page gbk does not fit given bytes sequence at ALL. 'gbk' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,908 - Level 5 - Code page hz does not fit given bytes sequence at ALL. 'hz' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,910 - Level 5 - Code page iso2022_jp does not fit given bytes sequence at ALL. 'iso2022_jp' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,912 - Level 5 - Code page iso2022_jp_1 does not fit given bytes sequence at ALL. 'iso2022_jp_1' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,913 - Level 5 - Code page iso2022_jp_2 does not fit given bytes sequence at ALL. 'iso2022_jp_2' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,915 - Level 5 - Code page iso2022_jp_2004 does not fit given bytes sequence at ALL. 'iso2022_jp_2004' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,916 - Level 5 - Code page iso2022_jp_3 does not fit given bytes sequence at ALL. 'iso2022_jp_3' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,918 - Level 5 - Code page iso2022_jp_ext does not fit given bytes sequence at ALL. 'iso2022_jp_ext' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,919 - Level 5 - Code page iso2022_kr does not fit given bytes sequence at ALL. 'iso2022_kr' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,921 - Level 5 - Code page johab does not fit given bytes sequence at ALL. 'johab' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,923 - Level 5 - Code page shift_jis does not fit given bytes sequence at ALL. 'shift_jis' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,925 - Level 5 - Code page shift_jis_2004 does not fit given bytes sequence at ALL. 'shift_jis_2004' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,927 - Level 5 - Code page shift_jisx0213 does not fit given bytes sequence at ALL. 'shift_jisx0213' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:43:14,927 - Level 5 - Encoding utf_16 won't be tested as-is because it require a BOM. Will try some sub-encoder LE/BE.
+2026-09-21 09:43:14,929 - Level 5 - Code page utf_16_be does not fit given bytes sequence at ALL. 'utf-16-be' codec can't decode bytes in position 20-21: illegal UTF-16 surrogate
+2026-09-21 09:43:14,931 - Level 5 - Code page utf_16_le does not fit given bytes sequence at ALL. 'utf-16-le' codec can't decode bytes in position 100-101: illegal encoding
+2026-09-21 09:43:14,931 - Level 5 - Encoding utf_32 won't be tested as-is because it require a BOM. Will try some sub-encoder LE/BE.
+2026-09-21 09:43:14,932 - Level 5 - Code page utf_32_be does not fit given bytes sequence at ALL. 'utf-32-be' codec can't decode bytes in position 0-3: code point not in range(0x110000)
+2026-09-21 09:43:14,934 - Level 5 - Code page utf_32_le does not fit given bytes sequence at ALL. 'utf-32-le' codec can't decode bytes in position 4-7: code point not in range(0x110000)
+2026-09-21 09:43:14,934 - Level 5 - Encoding utf_7 won't be tested as-is because detection is unreliable without BOM/SIG.
+2026-09-21 09:43:14,936 - Level 5 - cp037 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 275.000000 %.
+2026-09-21 09:43:14,939 - Level 5 - cp1006 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 357.900000 %.
+2026-09-21 09:43:14,939 - Level 5 - cp1026 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,942 - Level 5 - cp1125 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 313.400000 %.
+2026-09-21 09:43:14,942 - Level 5 - cp1140 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,944 - Level 5 - Code page cp1250 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x88 in position 10: character maps to <undefined>
+2026-09-21 09:43:14,945 - Level 5 - Code page cp1251 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x98 in position 123: character maps to <undefined>
+2026-09-21 09:43:14,946 - Level 5 - Code page cp1252 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x90 in position 60: character maps to <undefined>
+2026-09-21 09:43:14,947 - Level 5 - Code page cp1253 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:14,949 - Level 5 - Code page cp1254 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x9e in position 53: character maps to <undefined>
+2026-09-21 09:43:14,951 - Level 5 - Code page cp1255 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:14,953 - Level 5 - cp1256 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 296.000000 %.
+2026-09-21 09:43:14,954 - Level 5 - Code page cp1257 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x88 in position 10: character maps to <undefined>
+2026-09-21 09:43:14,956 - Level 5 - Code page cp1258 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x9e in position 53: character maps to <undefined>
+2026-09-21 09:43:14,956 - Level 5 - cp273 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,958 - Level 5 - Code page cp424 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xfe in position 8: character maps to <undefined>
+2026-09-21 09:43:14,960 - Level 5 - cp437 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 322.800000 %.
+2026-09-21 09:43:14,960 - Level 5 - cp500 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,961 - Level 5 - cp720 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 353.200000 %.
+2026-09-21 09:43:14,964 - Level 5 - cp737 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 322.500000 %.
+2026-09-21 09:43:14,966 - Level 5 - cp775 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 272.300000 %.
+2026-09-21 09:43:14,966 - Level 5 - cp850 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,968 - Level 5 - cp852 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 256.300000 %.
+2026-09-21 09:43:14,970 - Level 5 - cp855 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 281.800000 %.
+2026-09-21 09:43:14,972 - Level 5 - Code page cp856 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xc7 in position 12: character maps to <undefined>
+2026-09-21 09:43:14,974 - Level 5 - Code page cp857 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xe7 in position 310: character maps to <undefined>
+2026-09-21 09:43:14,974 - Level 5 - cp858 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,974 - Level 5 - cp860 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,974 - Level 5 - cp861 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,974 - Level 5 - cp862 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,974 - Level 5 - cp863 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,976 - Level 5 - Code page cp864 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:14,976 - Level 5 - cp865 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,976 - Level 5 - cp866 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,979 - Level 5 - Code page cp869 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x80 in position 17: character maps to <undefined>
+2026-09-21 09:43:14,981 - Level 5 - Code page cp874 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:14,983 - Level 5 - cp875 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 218.500000 %.
+2026-09-21 09:43:14,984 - Level 5 - Code page hp_roman8 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:14,986 - Level 5 - iso8859_10 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 250.600000 %.
+2026-09-21 09:43:14,988 - Level 5 - Code page iso8859_11 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:14,990 - Level 5 - iso8859_13 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 306.700000 %.
+2026-09-21 09:43:14,990 - Level 5 - iso8859_14 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,990 - Level 5 - iso8859_15 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,992 - Level 5 - iso8859_16 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 267.000000 %.
+2026-09-21 09:43:14,992 - Level 5 - iso8859_2 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,992 - Level 5 - iso8859_3 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,992 - Level 5 - iso8859_4 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:14,994 - Level 5 - iso8859_5 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 322.500000 %.
+2026-09-21 09:43:14,996 - Level 5 - Code page iso8859_6 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:14,997 - Level 5 - Code page iso8859_7 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:14,999 - Level 5 - Code page iso8859_8 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:14,999 - Level 5 - iso8859_9 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:15,001 - Level 5 - koi8_r was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 316.600000 %.
+2026-09-21 09:43:15,003 - Level 5 - Code page koi8_t does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xbc in position 9: character maps to <undefined>
+2026-09-21 09:43:15,005 - Level 5 - koi8_u was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 314.700000 %.
+2026-09-21 09:43:15,007 - Level 5 - Code page kz1048 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x98 in position 123: character maps to <undefined>
+2026-09-21 09:43:15,007 - Level 5 - latin_1 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:15,009 - Level 5 - mac_cyrillic was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 253.400000 %.
+2026-09-21 09:43:15,010 - Level 5 - mac_greek was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 234.100000 %.
+2026-09-21 09:43:15,012 - Level 5 - mac_iceland was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 269.500000 %.
+2026-09-21 09:43:15,014 - Level 5 - mac_latin2 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 197.600000 %.
+2026-09-21 09:43:15,014 - Level 5 - mac_roman is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:15,014 - Level 5 - mac_turkish is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:43:15,016 - Level 5 - ptcp154 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 183.100000 %.
+2026-09-21 09:43:15,018 - Level 5 - Code page tis_620 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:43:15,018 - DEBUG - Encoding detection: Unable to determine any suitable charset.
+2026-09-21 09:43:15,019 - DEBUG - Crawled (200) <GET https://www.tekworld.it/robots.txt> (referer: None)
+2026-09-21 09:43:23,895 - DEBUG - Crawled (200) <GET https://www.tekworld.it/1004-lavatrici> (referer: None)
+2026-09-21 09:43:24,438 - DEBUG - Using selector: SelectSelector
+2026-09-21 09:44:31,117 - INFO - Scrapy 2.19.0 started (bot: tekworld)
+2026-09-21 09:44:31,167 - INFO - Versions:
+{'lxml': '6.1.3',
+ 'libxml2': '2.11.9',
+ 'cssselect': '1.5.0',
+ 'parsel': '1.11.0',
+ 'w3lib': '2.4.1',
+ 'Twisted': '26.4.0',
+ 'Python': '3.14.6 (tags/v3.14.6:c63aec6, Jun 10 2026, 10:26:10) [MSC v.1944 '
+           '64 bit (AMD64)]',
+ 'pyOpenSSL': '26.4.0 (OpenSSL 4.0.2 25 Aug 2026)',
+ 'cryptography': '50.0.1',
+ 'Platform': 'Windows-10-10.0.19045-SP0'}
+2026-09-21 09:44:31,168 - DEBUG - Using AsyncCrawlerProcess
+2026-09-21 09:44:31,168 - DEBUG - Using selector: SelectSelector
+2026-09-21 09:44:31,172 - INFO - Enabled addons:
+[]
+2026-09-21 09:44:31,176 - DEBUG - Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2026-09-21 09:44:31,176 - DEBUG - Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2026-09-21 09:44:31,183 - INFO - Telnet Password: f3a86bf25ceb8fb9
+2026-09-21 09:44:31,408 - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.logcount.LogCount',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.throttle.AutoThrottle']
+2026-09-21 09:44:31,409 - INFO - Overridden settings:
+{'AUTOTHROTTLE_ENABLED': True,
+ 'BOT_NAME': 'tekworld',
+ 'CONCURRENT_REQUESTS_PER_DOMAIN': 4,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'DUPEFILTER_CLASS': 'scrapy.dupefilters.BaseDupeFilter',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOGSTATS_INTERVAL': 0,
+ 'NEWSPIDER_MODULE': 'tekworld.spiders',
+ 'REMOTE_CONTROL_ENABLED': False,
+ 'RETRY_HTTP_CODES': [500, 502, 503, 504, 522, 524, 408, 429, 403],
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_MODULES': ['tekworld.spiders']}
+2026-09-21 09:44:31,701 - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2026-09-21 09:44:31,705 - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.start.StartSpiderMiddleware',
+ 'scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware',
+ 'scrapy.spidermiddlewares.metacopy.MetaCopyDetectionMiddleware']
+2026-09-21 09:44:31,705 - INFO - Enabled item pipelines:
+[]
+2026-09-21 09:44:31,707 - INFO - Telnet console listening on 127.0.0.1:6023
+2026-09-21 09:44:31,708 - INFO - Spider opened
+2026-09-21 09:44:31,817 - Level 5 - override steps (5) and chunk_size (512) as content does not fit (1109 byte(s) given) parameters.
+2026-09-21 09:44:31,817 - Level 5 - Code page ascii does not fit given bytes sequence at ALL. 'ascii' codec can't decode byte 0xff in position 7: ordinal not in range(128)
+2026-09-21 09:44:31,817 - Level 5 - Code page utf_8 does not fit given bytes sequence at ALL. 'utf-8' codec can't decode byte 0xff in position 7: invalid start byte
+2026-09-21 09:44:31,817 - Level 5 - Code page big5 does not fit given bytes sequence at ALL. 'big5' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,818 - Level 5 - Code page big5hkscs does not fit given bytes sequence at ALL. 'big5hkscs' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,819 - Level 5 - Code page cp932 does not fit given bytes sequence at ALL. 'cp932' codec can't decode byte 0x88 in position 27: illegal multibyte sequence
+2026-09-21 09:44:31,819 - Level 5 - Code page cp949 does not fit given bytes sequence at ALL. 'cp949' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,820 - Level 5 - Code page cp950 does not fit given bytes sequence at ALL. 'cp950' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,820 - Level 5 - Code page euc_jis_2004 does not fit given bytes sequence at ALL. 'euc_jis_2004' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,821 - Level 5 - Code page euc_jisx0213 does not fit given bytes sequence at ALL. 'euc_jisx0213' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,821 - Level 5 - Code page euc_jp does not fit given bytes sequence at ALL. 'euc_jp' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,822 - Level 5 - Code page euc_kr does not fit given bytes sequence at ALL. 'euc_kr' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,822 - Level 5 - Code page gb18030 does not fit given bytes sequence at ALL. 'gb18030' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,823 - Level 5 - Code page gb2312 does not fit given bytes sequence at ALL. 'gb2312' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,823 - Level 5 - Code page gbk does not fit given bytes sequence at ALL. 'gbk' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,824 - Level 5 - Code page hz does not fit given bytes sequence at ALL. 'hz' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,825 - Level 5 - Code page iso2022_jp does not fit given bytes sequence at ALL. 'iso2022_jp' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,825 - Level 5 - Code page iso2022_jp_1 does not fit given bytes sequence at ALL. 'iso2022_jp_1' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,826 - Level 5 - Code page iso2022_jp_2 does not fit given bytes sequence at ALL. 'iso2022_jp_2' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,826 - Level 5 - Code page iso2022_jp_2004 does not fit given bytes sequence at ALL. 'iso2022_jp_2004' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,827 - Level 5 - Code page iso2022_jp_3 does not fit given bytes sequence at ALL. 'iso2022_jp_3' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,827 - Level 5 - Code page iso2022_jp_ext does not fit given bytes sequence at ALL. 'iso2022_jp_ext' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,828 - Level 5 - Code page iso2022_kr does not fit given bytes sequence at ALL. 'iso2022_kr' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,828 - Level 5 - Code page johab does not fit given bytes sequence at ALL. 'johab' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,829 - Level 5 - Code page shift_jis does not fit given bytes sequence at ALL. 'shift_jis' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,829 - Level 5 - Code page shift_jis_2004 does not fit given bytes sequence at ALL. 'shift_jis_2004' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,830 - Level 5 - Code page shift_jisx0213 does not fit given bytes sequence at ALL. 'shift_jisx0213' codec can't decode byte 0xff in position 7: illegal multibyte sequence
+2026-09-21 09:44:31,830 - Level 5 - Encoding utf_16 won't be tested as-is because it require a BOM. Will try some sub-encoder LE/BE.
+2026-09-21 09:44:31,831 - Level 5 - Code page utf_16_be does not fit given bytes sequence at ALL. 'utf-16-be' codec can't decode bytes in position 20-21: illegal UTF-16 surrogate
+2026-09-21 09:44:31,831 - Level 5 - Code page utf_16_le does not fit given bytes sequence at ALL. 'utf-16-le' codec can't decode bytes in position 100-101: illegal encoding
+2026-09-21 09:44:31,831 - Level 5 - Encoding utf_32 won't be tested as-is because it require a BOM. Will try some sub-encoder LE/BE.
+2026-09-21 09:44:31,832 - Level 5 - Code page utf_32_be does not fit given bytes sequence at ALL. 'utf-32-be' codec can't decode bytes in position 0-3: code point not in range(0x110000)
+2026-09-21 09:44:31,832 - Level 5 - Code page utf_32_le does not fit given bytes sequence at ALL. 'utf-32-le' codec can't decode bytes in position 4-7: code point not in range(0x110000)
+2026-09-21 09:44:31,832 - Level 5 - Encoding utf_7 won't be tested as-is because detection is unreliable without BOM/SIG.
+2026-09-21 09:44:31,833 - Level 5 - cp037 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 275.000000 %.
+2026-09-21 09:44:31,834 - Level 5 - cp1006 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 357.900000 %.
+2026-09-21 09:44:31,834 - Level 5 - cp1026 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,835 - Level 5 - cp1125 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 313.400000 %.
+2026-09-21 09:44:31,835 - Level 5 - cp1140 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,835 - Level 5 - Code page cp1250 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x88 in position 10: character maps to <undefined>
+2026-09-21 09:44:31,836 - Level 5 - Code page cp1251 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x98 in position 123: character maps to <undefined>
+2026-09-21 09:44:31,836 - Level 5 - Code page cp1252 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x90 in position 60: character maps to <undefined>
+2026-09-21 09:44:31,837 - Level 5 - Code page cp1253 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,837 - Level 5 - Code page cp1254 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x9e in position 53: character maps to <undefined>
+2026-09-21 09:44:31,838 - Level 5 - Code page cp1255 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,838 - Level 5 - cp1256 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 296.000000 %.
+2026-09-21 09:44:31,839 - Level 5 - Code page cp1257 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x88 in position 10: character maps to <undefined>
+2026-09-21 09:44:31,839 - Level 5 - Code page cp1258 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x9e in position 53: character maps to <undefined>
+2026-09-21 09:44:31,839 - Level 5 - cp273 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,840 - Level 5 - Code page cp424 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xfe in position 8: character maps to <undefined>
+2026-09-21 09:44:31,841 - Level 5 - cp437 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 322.800000 %.
+2026-09-21 09:44:31,841 - Level 5 - cp500 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,842 - Level 5 - cp720 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 353.200000 %.
+2026-09-21 09:44:31,842 - Level 5 - cp737 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 322.500000 %.
+2026-09-21 09:44:31,843 - Level 5 - cp775 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 272.300000 %.
+2026-09-21 09:44:31,843 - Level 5 - cp850 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,844 - Level 5 - cp852 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 256.300000 %.
+2026-09-21 09:44:31,845 - Level 5 - cp855 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 281.800000 %.
+2026-09-21 09:44:31,845 - Level 5 - Code page cp856 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xc7 in position 12: character maps to <undefined>
+2026-09-21 09:44:31,846 - Level 5 - Code page cp857 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xe7 in position 310: character maps to <undefined>
+2026-09-21 09:44:31,846 - Level 5 - cp858 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,846 - Level 5 - cp860 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,846 - Level 5 - cp861 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,846 - Level 5 - cp862 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,846 - Level 5 - cp863 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,846 - Level 5 - Code page cp864 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,846 - Level 5 - cp865 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,847 - Level 5 - cp866 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,847 - Level 5 - Code page cp869 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x80 in position 17: character maps to <undefined>
+2026-09-21 09:44:31,848 - Level 5 - Code page cp874 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,848 - Level 5 - cp875 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 218.500000 %.
+2026-09-21 09:44:31,849 - Level 5 - Code page hp_roman8 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,849 - Level 5 - iso8859_10 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 250.600000 %.
+2026-09-21 09:44:31,850 - Level 5 - Code page iso8859_11 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,850 - Level 5 - iso8859_13 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 306.700000 %.
+2026-09-21 09:44:31,850 - Level 5 - iso8859_14 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,850 - Level 5 - iso8859_15 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,851 - Level 5 - iso8859_16 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 267.000000 %.
+2026-09-21 09:44:31,851 - Level 5 - iso8859_2 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,851 - Level 5 - iso8859_3 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,851 - Level 5 - iso8859_4 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,852 - Level 5 - iso8859_5 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 322.500000 %.
+2026-09-21 09:44:31,852 - Level 5 - Code page iso8859_6 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,853 - Level 5 - Code page iso8859_7 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,853 - Level 5 - Code page iso8859_8 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,853 - Level 5 - iso8859_9 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,854 - Level 5 - koi8_r was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 316.600000 %.
+2026-09-21 09:44:31,854 - Level 5 - Code page koi8_t does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xbc in position 9: character maps to <undefined>
+2026-09-21 09:44:31,855 - Level 5 - koi8_u was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 314.700000 %.
+2026-09-21 09:44:31,855 - Level 5 - Code page kz1048 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0x98 in position 123: character maps to <undefined>
+2026-09-21 09:44:31,855 - Level 5 - latin_1 is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,856 - Level 5 - mac_cyrillic was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 253.400000 %.
+2026-09-21 09:44:31,857 - Level 5 - mac_greek was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 234.100000 %.
+2026-09-21 09:44:31,857 - Level 5 - mac_iceland was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 269.500000 %.
+2026-09-21 09:44:31,858 - Level 5 - mac_latin2 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 197.600000 %.
+2026-09-21 09:44:31,858 - Level 5 - mac_roman is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,858 - Level 5 - mac_turkish is deemed too similar to a code page that was already considered unsuited. Continuing!
+2026-09-21 09:44:31,859 - Level 5 - ptcp154 was excluded because of initial chaos probing. Gave up 1 time(s). Computed mean chaos is 183.100000 %.
+2026-09-21 09:44:31,859 - Level 5 - Code page tis_620 does not fit given bytes sequence at ALL. 'charmap' codec can't decode byte 0xff in position 7: character maps to <undefined>
+2026-09-21 09:44:31,859 - DEBUG - Encoding detection: Unable to determine any suitable charset.
+2026-09-21 09:44:31,860 - DEBUG - Crawled (200) <GET https://www.tekworld.it/robots.txt> (referer: None)
+2026-09-21 09:44:36,965 - DEBUG - Crawled (200) <GET https://www.tekworld.it/lavatrici/106564-midea-lavat-mf100w70ba-w-it-7kga1400g-profonda-533cminverterhigyene-90-gradiprelavaggiorapido-6945878342088.html> (referer: None)
+2026-09-21 09:44:37,195 - DEBUG - Using selector: SelectSelector
+2026-09-21 09:44:48,965 - DEBUG - Using selector: SelectSelector
+2026-09-21 09:45:50,640 - DEBUG - Using selector: SelectSelector
+2026-09-21 09:46:09,713 - DEBUG - Using selector: SelectSelector
+2026-09-21 09:46:43,037 - DEBUG - Using selector: SelectSelector
+2026-09-21 09:47:15,251 - DEBUG - Using selector: SelectSelector
