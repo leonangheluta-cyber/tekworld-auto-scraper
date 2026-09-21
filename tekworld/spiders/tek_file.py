@@ -1,15 +1,11 @@
 import scrapy
 import requests
 import logging
-from pathlib import Path
-from dotenv import load_dotenv
 import os
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s - %(levelname)s - %(message)s",
                     filename="script_tekworld.log")
 
-path_env=Path.home()/"Secret"/".env"
-load=load_dotenv(dotenv_path=path_env)
 telegram_bot=os.environ.get("TELEGRAM_BOT")
 chat_id=os.environ.get("CHAT_ID")
       
