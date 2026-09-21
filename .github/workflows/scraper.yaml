@@ -1,0 +1,33 @@
+name: Update tekworld prices
+on:
+  schedule:
+    - cron: "0 14 * * *"
+jobs: 
+  scrape-and-convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Create outputs folder
+        run: mkdir -p outputs
+      - name: Run spider
+        run: scrapy crawl tek_file -o outputs/tekworld_output.csv
+        env:
+          TELEGRAM_BOT: ${{ secrets.TELEGRAM_BOT }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+      - name: Run conversion
+        run: jupyter nbconvert --to notebook --execute saving_to_excel.ipynb
+        env:
+          TELEGRAM_BOT: ${{ secrets.TELEGRAM_BOT }}
+          CHAT_ID: ${{ secrets.CHAT_ID }}
+      - name: Upload Excel file
+        uses: actions/upload-artifact@v4
+        with:
+          name: tekworld-output
+          path: outputs/final_output.xlsx
