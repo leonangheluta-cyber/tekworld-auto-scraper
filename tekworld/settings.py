@@ -20,7 +20,16 @@ RETRY_HTTP_CODES = [500, 502, 503, 504, 522, 524, 408, 429, 403]
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
-
+FEED_EXPORT_FIELDS = [
+    "Name", "Item_code", "Price", "Category", "Efficiency_class energetica", "Availability",
+    "Classe di efficienza della centrifuga", "Programmi di lavaggio", "Velocità di centrifuga massima",
+    "Durata del ciclo (max)", "Consumo di energia per lavaggio", "Tipo di controllo",
+    "Consumo d'energia", "Durata della garanzia", "Larghezza", "Profondità", "Altezza",
+    "Numero di cassetti per verdura", "Balconcini del frigorifero", "Tipo di cerniera della porta",
+    "Numero di ripiani frigorifero", "Peso",
+    "Spia brillantante", "Numero di cestini", "Sistema di dosaggio automatico",
+    "Display incorporato", "Emissione acustica", "Ciclo", "Consumo di acqua per ciclo"
+]
 # Concurrency and throttling settings
 #CONCURRENT_REQUESTS = 16
 CONCURRENT_REQUESTS_PER_DOMAIN = 4
