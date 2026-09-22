@@ -22,13 +22,18 @@ RETRY_HTTP_CODES = [500, 502, 503, 504, 522, 524, 408, 429, 403]
 ROBOTSTXT_OBEY = True
 FEED_EXPORT_FIELDS = [
     "Name", "Item_code", "Price", "Category", "Efficiency_class", "Availability",
+    "Larghezza", "Profondità", "Altezza", "Durata della garanzia",
     "Classe di efficienza della centrifuga", "Programmi di lavaggio", "Velocità di centrifuga massima",
     "Durata del ciclo (max)", "Consumo di energia per lavaggio", "Tipo di controllo",
-    "Consumo d'energia", "Durata della garanzia", "Larghezza", "Profondità", "Altezza",
-    "Numero di cassetti per verdura", "Balconcini del frigorifero", "Tipo di cerniera della porta",
-    "Numero di ripiani frigorifero", "Peso",
+    "Consumo d'energia", "Numero di cassetti per verdura", "Balconcini del frigorifero",
+    "Tipo di cerniera della porta", "Numero di ripiani frigorifero", "Peso",
     "Spia brillantante", "Numero di cestini", "Sistema di dosaggio automatico",
-    "Display incorporato", "Emissione acustica", "Ciclo", "Consumo di acqua per ciclo"
+    "Display incorporato", "Emissione acustica", "Ciclo", "Consumo di acqua per ciclo",
+    "Numero di fuochi", "Sorgente di alimentazione del forno", "Materiale di rivestimento",
+    "Tipo di accensione elettronica", "Numero totale di fuochi",
+    "Numero di piani cottura utilizzabili contemporaneamente",
+    "Potenza motore", "Numero di velocità", "Consumo energetico annuo",
+    "Potenza massima di estrazione", "Diametro del raccordo di scarico", "Numero di lampadine"
 ]
 # Concurrency and throttling settings
 #CONCURRENT_REQUESTS = 16
