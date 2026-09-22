@@ -68,10 +68,11 @@ class TekFileSpider(scrapy.Spider):
         price=response.css("div.current-price span::attr(content)").get()
         if not price:
             logging.warning(f"Price not found for {name}")
-        efficiency_class_ok=None
         efficiency_class=response.css("div.tw-energy-copy h2::text").get()
+        efficiency_class_ok=None
         if efficiency_class:
             efficiency_class_ok=efficiency_class.replace("Classe energetica", "").strip()
+            print(efficiency_class_ok)
         else:
             logging.warning(f"Efficiency_class not found for {name}")
         catalogue={"Name": name, "Item_code": item_code, "Price": price, "Category": category, "Efficiency_class": efficiency_class_ok, "Availability": avv}
