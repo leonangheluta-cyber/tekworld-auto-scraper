@@ -1,7 +1,7 @@
 name: Update tekworld prices
 on:
   schedule:
-    - cron: "0 16 * * *"
+    - cron: "30 9 * * *"
   workflow_dispatch:
 jobs: 
   scrape-and-convert:
@@ -20,7 +20,7 @@ jobs:
       - name: Create outputs folder
         run: mkdir -p outputs
       - name: Run spider
-        run: scrapy crawl tek_file -o outputs/tekworld_output.csv -s CLOSESPIDER_ITEMCOUNT=50
+        run: scrapy crawl tek_file -o outputs/tekworld_output.csv
         env:
           TELEGRAM_BOT: ${{ secrets.TELEGRAM_BOT }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
