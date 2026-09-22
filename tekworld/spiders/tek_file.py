@@ -59,9 +59,6 @@ class TekFileSpider(scrapy.Spider):
             logging.warning("Name not found")
             if self.names_missing==50:
                 self.notify_allert("Names in page not found")
-        desc=response.css("div.tw-description-content::text").get()
-        if desc:
-            description=desc.strip()
         avv=response.css("div.tw-buy-availability strong::text").get()
         if not avv:
             logging.warning(f"Availability not found for {name}")
@@ -77,7 +74,7 @@ class TekFileSpider(scrapy.Spider):
         else:
             efficiency_class_ok=None
             logging.warning(f"Efficiency_class not found for {name}")
-        catalogue={"Name": name, "Item_code": item_code, "Price": price, "Category": category, "Description": description, "Efficiency_class": efficiency_class_ok, "Availability": avv}
+        catalogue={"Name": name, "Item_code": item_code, "Price": price, "Category": category, "Efficiency_class": efficiency_class_ok, "Availability": avv}
         details=response.css("div.tw-spec-row")
         for d in details:
             label=d.css("span::text").get()
