@@ -20,7 +20,7 @@ jobs:
       - name: Create outputs folder
         run: mkdir -p outputs
       - name: Run spider
-        run: scrapy crawl tek_file -o outputs/tekworld_output.csv
+        run: scrapy crawl tek_file -o outputs/tekworld_output.csv -s CLOSESPIDER_ITEMCOUNT=50
         env:
           TELEGRAM_BOT: ${{ secrets.TELEGRAM_BOT }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
