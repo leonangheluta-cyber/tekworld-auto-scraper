@@ -70,7 +70,7 @@ class TekFileSpider(scrapy.Spider):
         else:
             efficiency_class_ok=None
             logging.warning(f"Efficiency_class not found for {name}")
-        catalogue={"Name": name, "Item_code": item_code, "Price": price, "Category": category.capitalize(), "Efficiency_class energetica": efficiency_class_ok, "Availability": avv}
+        catalogue={"Name": name, "Item_code": item_code, "Price": price, "Category": category, "Efficiency_class energetica": efficiency_class_ok, "Availability": avv}
         details=response.css("div.tw-spec-row")
         for d in details:
             label=d.css("span::text").get()
