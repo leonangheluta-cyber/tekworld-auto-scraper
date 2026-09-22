@@ -15,7 +15,7 @@ class TekFileSpider(scrapy.Spider):
     urls_category={"lavatrici" : "https://www.tekworld.it/1004-lavatrici",
                     "frigoriferi" : "https://www.tekworld.it/1005-frigoriferi",
                     "lavastoviglie" : "https://www.tekworld.it/1177-lavastoviglie"}
-    labels={"lavatrici": ["Classe di efficienza della centrifuga", "Programmi di lavaggio", "Velocità di centrifuga massima", "Durata del ciclo (max)", "Consumo di energia per lavaggio", "Tipo di controllo"], 
+    labels={"lavatrici": ["Classe di efficienza della centrifuga", "Programmi di lavaggio", "Velocità di centrifuga massima", "Larghezza", "Profondità", "Altezza","Durata del ciclo (max)", "Consumo di energia per lavaggio", "Tipo di controllo"], 
                "frigoriferi": ["Consumo d'energia", "Durata della garanzia", "Larghezza", "Profondità","Altezza", "Numero di cassetti per verdura", "Balconcini del frigorifero", "Tipo di cerniera della porta", "Numero di ripiani frigorifero", "Peso"], 
                "lavastoviglie": ["Spia brillantante", "Numero di cestini", "Sistema di dosaggio automatico", "Durata della garanzia", "Larghezza", "Profondità", "Altezza", "Display incorporato", "Emissione acustica", "Ciclo", "Consumo di acqua per ciclo"]}
 
@@ -70,7 +70,7 @@ class TekFileSpider(scrapy.Spider):
         else:
             efficiency_class_ok=None
             logging.warning(f"Efficiency_class not found for {name}")
-        catalogue={"Name": name, "Item_code": item_code, "Price": price, "Category": category, "Efficiency_class energetica": efficiency_class_ok, "Availability": avv}
+        catalogue={"Name": name, "Item_code": item_code, "Price": price, "Category": category.capitalize(), "Efficiency_class energetica": efficiency_class_ok, "Availability": avv}
         details=response.css("div.tw-spec-row")
         for d in details:
             label=d.css("span::text").get()
