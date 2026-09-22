@@ -21,7 +21,7 @@ RETRY_HTTP_CODES = [500, 502, 503, 504, 522, 524, 408, 429, 403]
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
 FEED_EXPORT_FIELDS = [
-    "Name", "Item_code", "Price", "Category", "Efficiency_class energetica", "Availability",
+    "Name", "Item_code", "Price", "Category", "Efficiency_class", "Availability",
     "Classe di efficienza della centrifuga", "Programmi di lavaggio", "Velocità di centrifuga massima",
     "Durata del ciclo (max)", "Consumo di energia per lavaggio", "Tipo di controllo",
     "Consumo d'energia", "Durata della garanzia", "Larghezza", "Profondità", "Altezza",
